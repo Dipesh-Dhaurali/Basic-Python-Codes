@@ -1,0 +1,7 @@
+# variable class in tkinter
+
+BoleanVar ==== check box
+Intvar   === radio button
+StringVar === text   (TextVar to retrive it) later
+
+DoubleVar === for calculation ===>> making calculater

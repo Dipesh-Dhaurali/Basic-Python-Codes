@@ -1,0 +1,14 @@
+https://youtu.be/0d-aZ5moXzA?list=PLu0W_9lII9ajLcqRcj4PoEihkukF_OTzA
+
+
+labels options
+-------------------------
+title = add the title
+text = add the text
+bg   = background
+fg  = foreground
+font  = set the font
+padx  = x padding
+pady  = y padding
+broderwidth=number ( to give broder )
+relif  = border styling-SUNKEN , RAISED , GROOVE , RIDGE

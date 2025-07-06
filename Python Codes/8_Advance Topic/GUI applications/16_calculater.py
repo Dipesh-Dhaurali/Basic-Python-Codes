@@ -1,0 +1,42 @@
+import tkinter as tk
+
+# Create the main window
+root = tk.Tk()
+root.title("Simple Calculator")
+
+# Entry widget for showing input and result
+entry = tk.Entry(root, width=16, borderwidth=2)
+entry.grid(row=0, column=0, columnspan=4)
+
+# List of buttons
+buttons = [
+    '7', '8', '9', '/',
+    '4', '5', '6', '*',
+    '1', '2', '3', '-',
+    '0', '.', '=', '+',
+    'C'
+]
+
+# Create buttons and arrange them in a grid
+row = 1
+col = 0
+for button in buttons:
+    tk.Button(root, text=button, width=5, height=2,
+              command=lambda b=button: on_button_click(b)).grid(row=row, column=col)
+    col += 1
+    if col > 3:
+        col = 0
+        row += 1
+
+# Function to handle button clicks
+def on_button_click(button):
+    if button == "=":
+        result = eval(entry.get())  # Directly calculate the result
+        entry.delete(0, tk.END)
+        entry.insert(tk.END, str(result))
+    elif button == "C":
+        entry.delete(0, tk.END)
+    else:
+        entry.insert(tk.END, button)
+
+root.mainloop()
