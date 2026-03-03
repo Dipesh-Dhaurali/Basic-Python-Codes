@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{%block start%}
+
+    <a href="/">Home</a>
+    <a href="/contactus">Contactus</a>
+    <a href="/aboutus">about</a>
+
+    <h1>This is aboutus page</h1>
+    {% comment %} It will show all data {% endcomment %}
+    {{context}}
+
+    {% if 'python' in context%} yes
+    {% elif 'django' in context%} yes
+    {% elif 'sql' in context%} yes
+    {% else  %} no
+    {%endif%}
+
+{% endblock %}
