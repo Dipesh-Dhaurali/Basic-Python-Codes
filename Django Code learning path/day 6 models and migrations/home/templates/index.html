@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{%block start%}
+
+
+
+    <a href="/">Home</a>
+    <a href="/contactus">Contactus</a>
+    <a href="/aboutus">about</a>
+
+    <h1>This is index page</h1>
+<br>
+{% comment %} This is tables {% endcomment %}
+
+    <table class="container">
+  <tr>
+    <th>S.No</th>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Can Vote</th>
+  </tr> 
+
+  {% comment %} jati value xa tei anusar ko table create garxa {% endcomment %}
+  {% comment %} This is for looping {% endcomment %}
+  {% for c in context %}  
+  <tr> 
+    <td>{{forloop.counter}}</td>
+    <td>{{c.name}}</td>
+    <td>{{c.age}}</td>
+  
+
+  {% comment %} This is for if condtion {% endcomment %}
+    <td {% if c.age < 18 %} style="background:red" {% endif %}>
+        {% if c.age >= 18 %}
+        yes👍
+        {% else %}
+        no👎
+        {% endif %}
+    </td>
+</tr>
+  {%endfor%}
+</table>
+
+
+
+{% endblock %}
