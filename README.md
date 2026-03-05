@@ -1,9 +1,11 @@
 # Django CRUD Template 🐍
 
-1) Using Django Shell
+
 A simple and easy reference for Django CRUD operations .
 Thi
 ```python
+1) Using Django Shell
+
 # C = Create
 ClassName.objects.create(obj1="value1", obj2=2, obj3="value3")
 
@@ -22,8 +24,8 @@ ClassName.objects.all().delete()  # Delete all objects
 
 
 
-
 2) Using Django Admin Pannel
+
 inside admin.py
 -----------
 admin.site.register(ModelName)
