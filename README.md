@@ -18,3 +18,8 @@ ClassName.objects.filter(id=1).update(obj="value")
 ClassName.objects.get(id=1).delete()
 ClassName.objects.filter(id=2).delete()
 ClassName.objects.all().delete()  # Delete all objects
+
+
+
+link
+https://youtu.be/khdVg1lLbZo
