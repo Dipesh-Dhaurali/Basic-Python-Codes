@@ -43,7 +43,7 @@ https://youtu.be/khdVg1lLbZo
 
 
 
-```CMD
+```html
 from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
