@@ -36,9 +36,38 @@ models.py
 def __str__(self):
         return self.name
 
-
-
-
-
 link
 https://youtu.be/khdVg1lLbZo
+
+```
+
+
+
+
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+
+# STATIC
+STATIC_URL = '/static/'
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATICFILES_DIRS = [BASE_DIR / 'static'] 
+
+# MEDIA
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+
+#inside urls
+# ----------------------------------------------------------------------
+from django.conf import settings
+from django.conf.urls.static import static
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+# insite models
+# ---------------------------------------------
+cover = models.ImageField(upload_to='images/')
+
+
+
+
+
