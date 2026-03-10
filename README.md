@@ -2,7 +2,7 @@
 
 
 A simple and easy reference for Django CRUD operations .
-Thi
+
 ```python
 1) Using Django Shell
 
@@ -40,8 +40,11 @@ link
 https://youtu.be/khdVg1lLbZo
 
 ```
+<br> <br>
+<hr>
+<br> <br>
 
-
+# Static and Media Files Django 
 
 ```css
 from pathlib import Path
@@ -67,7 +70,7 @@ urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 # ---------------------------------------------
 cover = models.ImageField(upload_to='images/')
 
-
+```
 
 
 
