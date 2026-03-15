@@ -74,6 +74,7 @@ cover = models.ImageField(upload_to='images/')
 <br> <br>
 <hr>
 <br> <br>
+
 # Faker data
 
 ```css
